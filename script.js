@@ -10,7 +10,7 @@ const navItem = document.querySelector(".nav-item");
 
 navItem.forEach((element) => {
   element.addEventListener("click", () => {
-    hamMenu.classList.remove("acive");
+    hamMenu.classList.remove("active");
     mainNav.classList.remove("active");
   });
 });
