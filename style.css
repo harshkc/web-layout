@@ -92,11 +92,12 @@ nav {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(var(--move,8px)) rotate(var(--rotation,45deg));
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    --move:-8px;
+    --rotation:-45deg;
   }
 }
 
